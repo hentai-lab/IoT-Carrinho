@@ -71,53 +71,56 @@ void loop() {
     return;
   }
 
-  delay(50);
-
-  // Pinos definidos
-  // pinRight 3
-  // pinLeft 9
-  // pinForward 11
-  // pinBackward 12
+  while (dadosRecebidos > 0) {
+    dadosRecebidos--;
+    delay(50);
   
-  char c = Serial.read();
-  switch (c) {
-    case 'W':
-      digitalWrite(pinBackward, 0);
-      digitalWrite(pinForward, 1);
-      break;
-    case 'w':
-      digitalWrite(pinBackward, 0);
-      digitalWrite(pinForward, 0);
-      break;
-    case 'S':
-      digitalWrite(pinForward, 0);
-      digitalWrite(pinBackward, 1);
-      break;
-    case 's':
-      digitalWrite(pinForward, 0);
-      digitalWrite(pinBackward, 0);
-      break;
-    case 'A':
-      digitalWrite(pinRight, 0);
-      digitalWrite(pinLeft, 1);
-      break;
-    case 'a':
-      digitalWrite(pinRight, 0);
-      digitalWrite(pinLeft, 0);
-      break;
-    case 'D':
-      digitalWrite(pinLeft, 0);
-      digitalWrite(pinRight, 1);
-      break;
-    case 'd':
-      digitalWrite(pinLeft, 0);
-      digitalWrite(pinRight, 0);
-      break;
-    default:
-      piscar(PinoR, 4);
-      break;
+    // Pinos definidos
+    // pinRight 3
+    // pinLeft 9
+    // pinForward 11
+    // pinBackward 12
+    
+    char c = Serial.read();
+    switch (c) {
+      case 'W':
+        digitalWrite(pinBackward, 0);
+        digitalWrite(pinForward, 1);
+        break;
+      case 'w':
+        digitalWrite(pinBackward, 0);
+        digitalWrite(pinForward, 0);
+        break;
+      case 'S':
+        digitalWrite(pinForward, 0);
+        digitalWrite(pinBackward, 1);
+        break;
+      case 's':
+        digitalWrite(pinForward, 0);
+        digitalWrite(pinBackward, 0);
+        break;
+      case 'A':
+        digitalWrite(pinRight, 0);
+        digitalWrite(pinLeft, 1);
+        break;
+      case 'a':
+        digitalWrite(pinRight, 0);
+        digitalWrite(pinLeft, 0);
+        break;
+      case 'D':
+        digitalWrite(pinLeft, 0);
+        digitalWrite(pinRight, 1);
+        break;
+      case 'd':
+        digitalWrite(pinLeft, 0);
+        digitalWrite(pinRight, 0);
+        break;
+      default:
+        piscar(PinoR, 4);
+        break;
+    }
   }
 
-  limparSerial();
+  //limparSerial();
 }
 
