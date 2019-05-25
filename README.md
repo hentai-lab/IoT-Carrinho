@@ -23,6 +23,19 @@ Isn't required that you have a kinect and an android device, just have one of bo
 
 ---
 
+## Developers Team
+Team composed of the following members of the interdisciplinary project group
+
+Members | Responsability
+------------ | -------------
+[Matheus Marques Polillo](https://github.com/matheuspolillo) | Android and Arduino script
+[Felipe da Silva Leitão](https://github.com/Fishermanzi) | Construction and assembly of remote control cars
+Bruno Seiti Ueda Palma | C# API for Kinect (under construction)
+[João Pedro Libonati](https://github.com/joaopedrolibonati) | Construction and assembly of remote control cars
+Not defined yet | Kinect script (under construction)
+
+---
+
 ## References
 
 Soon!
