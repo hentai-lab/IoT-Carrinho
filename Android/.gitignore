@@ -1,0 +1,17 @@
+captures/
+.externalNativeBuild
+.DS_Store
+.gradle/
+.idea/
+.settings/
+bin/
+build/
+obj/
+gen/
+proguard/
+release/
+local.properties
+# Intellij project files
+*.iml
+*.ipr
+*.iws
