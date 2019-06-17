@@ -1,3 +1,5 @@
+![HenCar](Assets/hencarLogo.jpg)
+
 # Remote Control Car
 
 An IoT application using android and kinect to communicate an arduino board to move a remote control car.
@@ -9,6 +11,7 @@ An IoT application using android and kinect to communicate an arduino board to m
 - __Android:__ _app script_ directory;
 - __Arduino:__ _arduino script_ directory;
 - __Kinect:__ _kinect script_ directory;
+- __Assets:__ _images_ directory;
 
 ---
 
